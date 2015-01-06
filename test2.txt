@@ -1,0 +1,77 @@
+CREATE TABLE
+CREATE TABLE;
+CREATE TABLE Student;
+CREATE TABLE Student();
+CREATE TABLE Student(sid INT = 0);
+CREATE TABLE Student(INT sid = 0);
+CREATE TABLE Student(sid INT, age INT DEFAULT);
+CREATE TABLE Student(sid INT, age INT DEFAULT = 10, age INT);
+CREATE TABLE Student(sid INT, age INT DEFAULT = 10, PRIMARY KEY (height));
+CREATE TABLE Student(sid INT, PRIMARY KEY (sid), age INT DEFAULT = 10, PRIMARY KEY (age));
+CREATE TABLE Student(sid INT, age INT DEFAULT = 10, PRIMARY KEY (sid, age));
+CREATE TABLE Student(sid INT);
+CREATE TABLE S(a INT, a0 INT, a1 INT, a2 INT, a3 INT, a4 INT, a5 INT, a6 INT, a7 INT, a8 INT, a9 INT, a10 INT, a11 INT, a12 INT, a13 INT, a14 INT, a15 INT, a16 INT, a17 INT, a18 INT, a19 INT, a20 INT, a21 INT, a22 INT, a23 INT, a24 INT, a25 INT, a26 INT, a27 INT, a28 INT, a29 INT, a30 INT, a31 INT, a32 INT, a33 INT, a34 INT, a35 INT, a36 INT, a37 INT, a38 INT, a39 INT, a40 INT, a41 INT, a42 INT, a43 INT, a44 INT, a45 INT, a46 INT, a47 INT, a48 INT, a49 INT, a50 INT, a51 INT, a52 INT, a53 INT, a54 INT, a55 INT, a56 INT, a57 INT, a58 INT, a59 INT, a60 INT, a61 INT, a62 INT, a63 INT, a64 INT, a65 INT, a66 INT, a67 INT, a68 INT, a69 INT, a70 INT, a71 INT, a72 INT, a73 INT, a74 INT, a75 INT, a76 INT, a77 INT, a78 INT, a79 INT, a80 INT, a81 INT, a82 INT, a83 INT, a84 INT, a85 INT, a86 INT, a87 INT, a88 INT, a89 INT, a90 INT, a91 INT, a92 INT, a93 INT, a94 INT, a95 INT, a96 INT, a97 INT, a98 INT, a99 INT, a100 INT, a101 INT);
+CREATE TABLE S(a INT, a0 INT, a1 INT, a2 INT, a3 INT, a4 INT, a5 INT, a6 INT, a7 INT, a8 INT, a9 INT, a10 INT, a11 INT, a12 INT, a13 INT, a14 INT, a15 INT, a16 INT, a17 INT, a18 INT, a19 INT, a20 INT, a21 INT, a22 INT, a23 INT, a24 INT, a25 INT, a26 INT, a27 INT, a28 INT, a29 INT, a30 INT, a31 INT, a32 INT, a33 INT, a34 INT, a35 INT, a36 INT, a37 INT, a38 INT, a39 INT, a40 INT, a41 INT, a42 INT, a43 INT, a44 INT, a45 INT, a46 INT, a47 INT, a48 INT, a49 INT, a50 INT, a51 INT, a52 INT, a53 INT, a54 INT, a55 INT, a56 INT, a57 INT, a58 INT, a59 INT, a60 INT, a61 INT, a62 INT, a63 INT, a64 INT, a65 INT, a66 INT, a67 INT, a68 INT, a69 INT, a70 INT, a71 INT, a72 INT, a73 INT, a74 INT, a75 INT, a76 INT, a77 INT, a78 INT, a79 INT, a80 INT, a81 INT, a82 INT, a83 INT, a84 INT, a85 INT, a86 INT, a87 INT, a88 INT, a89 INT, a90 INT, a91 INT, a92 INT, a93 INT, a94 INT, a95 INT, a96 INT, a97 INT, a98 INT, a99 INT, a100 INT, a101 INT, PRIMARY KEY (a, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, a28, a29, a30, a31, a32, a33, a34, a35, a36, a37, a38, a39, a40, a41, a42, a43, a44, a45, a46, a47, a48, a49, a50, a51, a52, a53, a54, a55, a56, a57, a58, a59, a60, a61, a62, a63, a64, a65, a66, a67, a68, a69, a70, a71, a72, a73, a74, a75, a76, a77, a78, a79, a80, a81, a82, a83, a84, a85, a86, a87, a88, a89, a90, a91, a92, a93, a94, a95, a96, a97, a98, a99, a100, a101));
+
+INSERT INTO Student(sid, age) VALUES(01, 10);
+INSERT INTO Students(sid, age) VALUES(02, 11);
+INSERT INTO Student(height) VALUES(02);
+INSERT INTO Student(sid, age) VALUES(02, 11, 1);
+INSERT INTO Student(sid, age, age) VALUES(02, 11, 11);
+INSERT INTO Student(sid, age) VALUES(02, 10);
+INSERT INTO Student(sid, age);
+INSERT INTO Student(sid, age) VALUES(03, 3);
+INSERT INTO Student(sid, age) VALUES(4, 4);
+INSERT INTO Student(sid, age) VALUES(5, 5);
+
+DELETE WHERE age < 18;
+DELETE FROM Students;
+DELETE FROM Student WHERE age < -1;
+DELETE FROM Student WHERE height > 180;
+DELETE FROM Student WHERE age == 10;
+DELETE FROM Student WHERE age == -(-(-1));
+DELETE FROM Student WHERE age == 10 || age == 3;
+DELETE FROM Student WHERE age != 10 && sid == 4;
+
+SELECT sid, age FROM Student WHERE age < 10;
+SELECT sid, age FROM Student;
+SELECT * FROM Student;
+SELECT * FROM Students;
+SELECT height FROM Student;
+SELECT sid FROM Students WHERE height > 180;
+SELECT * FROM Student WHERE sid > 1+2-3/4;
+SELECT * FROM Student WHERE sid + 8 <> (5*(2+3))+4/5;
+SELECT * FROM Student WHERE sid + 1;
+SELECT * FROM Student WHERE age / (3 - 6 / 2) == 1;
+SELECT * FROM Student WHERE age == 3.0;
+SELECT * FROM Student WHERE age = 3;
+SELECT * FROM Student WHERE age == +3;
+SELECT * FROM Student WHERE !(age == 3);
+SELECT * FROM Student WHERE age == (3 + 1 >= 4);
+SELECT * FROM Student WHERE age == --2+(7*8);
+
+DELETE FROM Student;
+
+CREATE TABLE Student(sid INT, age INT, PRIMARY KEY (sid));
+INSERT INTO Student(sid, age) VALUES(0, 18);
+INSERT INTO Student(sid, age) VALUES(1, -18);
+INSERT INTO Student(sid, age) VALUES(2, 2-3+4+3-1);
+INSERT INTO Student(sid, age) VALUES(3, 2-3+4-3+1);
+INSERT INTO Student(sid, age) VALUES(4, 2+3-4);
+INSERT INTO Student(sid, age) VALUES(5, 2-3+4);
+INSERT INTO Student(sid, age) VALUES(6, -(2+7*8));
+INSERT INTO Student(sid, age) VALUES(7, -(-(2+(7*8))));
+INSERT INTO Student(sid, age) VALUES(8, -2+7*8);
+INSERT INTO Student(sid, age) VALUES(9, -(-(2-(7*8))));
+INSERT INTO Student(sid, age) VALUES(10, 32*3-6/2);
+INSERT INTO Student(sid, age) VALUES(11, -3*2);
+INSERT INTO Student(sid, age) VALUES(12, (3 + 4)*7);
+SELECT * FROM Student;
+SELECT * FROM Student WHERE age + 1 > 2;
+SELECT * FROM Student WHERE age > 2+3 && age < 7;
+SELECT * FROM Student WHERE age == (3+4)*7;
+SELECT * FROM Student WHERE (age + 0) * 1 == 18;
+SELECT * FROM Student WHERE sid > 3 && sid <= 10;
+SELECT * FROM Student WHERE sid <= 10 && sid > 3;
+SELECT * FROM Student WHERE (age > 0 && age < 100) || sid < 5;
+SELECT * FROM Student WHERE (age > 0 && age == (3+4) * 7) && sid < 13;
